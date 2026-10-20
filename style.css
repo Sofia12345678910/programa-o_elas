@@ -1,0 +1,573 @@
+/* 1. O CONTAINER DO TOPO (Garante a centralização na tela) */
+.topo-site {
+  display: block !important;
+  text-align: center !important;  /* Centraliza a imagem horizontalmente */
+  width: 100% !important;
+  margin: 20px auto 40px auto !important; /* Margem de 20px no topo e 40px antes do conteúdo */
+  padding: 0 15px !important;     /* Margem interna de segurança para não colar no vidro do celular */
+  box-sizing: border-box !important;
+}
+
+/* 2. A IMAGEM RESPONSIVA (Faz a mágica da adaptação) */
+.imagem-topo {
+  display: inline-block !important;
+  
+  /* 🔒 REGRAS DA RESPONSIVIDADE: */
+  width: 100% !important;         /* Ocupa a largura total até atingir o limite máximo */
+  max-width: 600px !important;    /* 🟢 AJUSTE AQUI: O tamanho máximo que ela deve ter em telas grandes (ex: 600px) */
+  height: auto !important;        /* Calcula a altura proporcional automaticamente para nunca amassar ou achatar */
+  
+  object-fit: contain !important; /* Garante que o desenho fique inteiro visível */
+}
+
+
+
+
+
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  background-image: none !important; 
+  background-color: rgb(210, 181, 227) !important; 
+  font-family: sans-serif;
+  height: auto !important;        
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  font-family: sans-serif;
+  overflow-x: hidden !important; /* Corta qualquer espaço fantasma lateral do site */
+}
+
+  
+  
+
+
+
+
+#painel-bio {
+   margin: 10px auto 10px auto; 
+  
+}
+
+
+
+.botao-ada {
+  background-color: rgb(94, 13, 110);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.botao-ada:hover {
+  background-color: rgb(130, 20, 150);
+}
+
+
+.grace {
+  background-color: rgb(3, 4, 97);
+  color: rgb(209, 143, 235);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.grace:hover {
+  background-color: rgb(4, 33, 140);
+}
+
+
+
+.carol {
+  background-color: rgb(115, 1, 54);
+  color: rgb(242, 7, 116);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.carol:hover {
+  background-color: rgb(151, 5, 104);
+}
+
+
+.mary {
+  background-color: rgb(51, 32, 17);
+  color: rgb(130, 75, 30);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.mary:hover {
+  background-color: rgb(69, 43, 22);
+}
+
+
+
+.jean {
+  background-color: rgb(32, 34, 79);
+  color: rgb(98, 99, 122);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.jean:hover {
+  background-color: rgb(43, 45, 84);
+}
+
+
+.frances {
+  background-color: rgb(133, 5, 22);
+  color: rgb(13, 1, 2);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.frances:hover {
+  background-color: rgb(168, 2, 24);
+}
+
+
+
+.hedy {
+  background-color: rgb(84, 173, 209);
+  color: rgb(0, 255, 255);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.hedy:hover {
+  background-color: rgb(120, 209, 245);
+}
+
+
+
+.katherine {
+  background-color: rgb(11, 61, 145);
+  color: rgb(244, 244, 240);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.katherine:hover {
+  background-color: rgb(30, 107, 235);
+}
+
+
+
+.marisa {
+  background-color: rgb(67, 6, 107);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.marisa:hover {
+  background-color: rgb(103, 8, 166);
+}
+
+
+.kathleen {
+  background-color: rgb(85, 107, 47);
+  color: rgb(229, 190, 118);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.kathleen:hover {
+  background-color: rgb(120, 150, 68);
+}
+
+
+.joan {
+  background-color: rgb(28, 59, 44);
+  color: rgb(245, 197, 100);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.joan:hover {
+  background-color: rgb(46, 94, 71);
+}
+
+
+
+.margaret {
+  background-color: rgb(18, 22, 28);
+  color: rgb(57, 255, 20);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.margaret:hover {
+  background-color: rgb(38, 48, 61);
+}
+
+
+
+
+.nina {
+  background-color: rgb(181, 42, 42);
+  color: rgb(255, 223, 0);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.nina:hover {
+  background-color: rgb(2235, 94, 40);
+}
+
+
+
+
+.marian {
+  background-color: rgb(181, 42, 42);
+  color: rgb(255, 223, 0);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ;
+}
+
+.marian:hover {
+  background-color: rgb(2235, 94, 40);
+}
+
+.circ {                           
+  background-color: rgb(149, 78, 204);    
+  color: black;              
+  padding: 15px;
+  width: 250px;                 
+  border-radius: 15px;          
+  font-family: sans-serif;
+  position: relative;
+  margin: 30px auto !important; 
+  text-align: center;
+}
+
+
+ img {
+  width: 130px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card {              
+  position: relative;  
+  background-color: rgb( 106, 27, 154);    
+  color: white;              
+  padding: 15px;
+  width: 270px;                 
+  border-radius: 15px;          
+  font-family: sans-serif;
+  flex-shrink: 0;
+}
+
+
+.carrossel {
+  position: relative;
+  width: 320px;                
+  height: 220px;               
+  margin: 0 auto;
+}
+
+
+.card {                                  
+  position: absolute;          
+  top: 0;
+  left: 0;
+  width: 320px;                 
+  box-sizing: border-box;
+  transition: transform 0.5s ease, opacity 0.4s ease;
+  
+ 
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.card.ativo {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+  transform: scale(1) rotate(0deg);
+}
+
+
+.card.proxima {
+  opacity: 0.6;
+  z-index: 5;
+  transform: scale(0.95) rotate(4deg) translate(8px, 4px);
+}
+
+
+.card.fundo {
+  opacity: 0.3;
+  z-index: 2;
+  transform: scale(0.9) rotate(-3deg) translate(-6px, 6px);
+}
+
+
+.card.passou {
+  transform: translateX(160%) rotate(15deg);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  visibility: hidden !important;
+}
+
+
+
+.seta-carrossel {
+  position: relative;          
+  margin: 20px auto 0 auto !important;               
+  transform: none;                     
+  transform: translateY(-50%);  
+  background-color: rgb(106, 27, 154); 
+  color: white;                
+  border: none;
+  width: 45px;                 
+  height: 45px;
+  border-radius: 50px;         
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  z-index: 999;                
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+   
+}
+
+.botoes-controle {
+  display: grid !important;          
+  grid-template-columns: 40px 40px !important; 
+  justify-content: center !important; 
+  align-content: center !important;   
+  gap: 20px !important;              
+  margin: 2px  !important;
+  width: 100% !important;
+  height: 20px !important;             
+}
+
+
+
+
+.seta-esquerda {
+  left: -130px;                  
+}
+
+.seta-direita {
+  right: -130px;                
+}
+
+.seta-carrossel:hover {
+  background-color: rgb(149, 78, 204); 
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  min-height: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important; 
+  background-color: transparent !important; 
+  
+  font-family: sans-serif;
+}
+
+/* Correção para unificar o fundo e eliminar os pedaços falhados */
+#intro, #bio, #circo {
+  display: block !important;       /*  bloco inteiro */
+  position: relative;
+  margin: 40px auto !important; 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75) !important; /* Cor preta translúcida  */
+  color: white !important;    
+  padding: 15px 30px !important;
+  max-width: 350px !important;   
+  border-radius: 12px !important; 
+  box-sizing: border-box !important;
+  overflow: hidden !important;     /* Impede que elementos de dentro quebrem o fundo */
+  text-align: left
+}
+
+
+#intro p, #bio p {
+  margin: 10px 0 !important;
+  padding: 0 !important;
+  line-height: 1.5;
+}
+
+/* Esconde a caixa apenas se ela estiver completamente sem conteúdo */
+#bio:empty {
+  display: none !important;
+}
+#circo:empty {
+  display: none !important;
+}
+/* Centraliza e ajusta as imagens dentro da biografia */
+#bio img {
+  margin: 0 auto 15px auto !important;
+  border-radius: 8px;
+  display: block;
+}
+
+.centralizar-bloco {
+  text-align: center;
+  width: 100%;
+  margin: 40px auto !important;
+}
+
+
+
+
+/* Altura e largura exclusivas do carrossel de circuitos */
+.carrossel-circ {
+  position: relative;
+  width: 320px;                
+  min-height: 100px !important; /* Altura mínima segura para o card mais longo */
+  height: auto !important;      /* Permite expandir se o texto crescer ainda mais */
+  margin: 0 auto 200px auto !important; 
+
+}
+
+/* Copia o comportamento de posicionamento absoluto e transição das cientistas */
+.card-circ {              
+  position: absolute;          
+  top: 0;
+  left: 0;
+  width: 320px;                 
+  box-sizing: border-box;
+  background-color: rgb(74, 20, 140); /* Tom de roxo ligeiramente diferente para diferenciar */   
+  color: white;              
+  padding: 15px;
+  border-radius: 15px;          
+  font-family: sans-serif;
+  flex-shrink: 0;
+  transition: transform 0.5s ease, opacity 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Vincula os mesmos estados de animação para os circuitos */
+.card-circ.ativo { 
+  opacity: 1;
+  pointer-events: auto; 
+  z-index: 10; 
+  transform: scale(1) rotate(0deg); 
+}
+
+.card-circ.proxima {
+  opacity: 0.6; 
+  z-index: 5; 
+  transform: scale(0.95) rotate(4deg) translate(8px, 4px); 
+}
+
+.card-circ.fundo { 
+  opacity: 0.3; 
+  z-index: 2; 
+  transform: scale(0.9) rotate(-3deg) translate(-6px, 6px); 
+}
+
+
+.card-circ.passou { 
+  transform: translateX(160%) rotate(15deg); 
+  opacity: 0; 
+  pointer-events: none; 
+  z-index: 1; 
+  visibility: hidden !important;
+}
+
+
+
+/* Estilização da caixa de texto do circuito (Preto translúcido idêntico) */
+#bio-circ {
+  display: block !important;       
+  position: relative;
+  margin: 40px auto !important; 
+  text-align: left !important;     
+  background-color: rgb(214, 166, 222) !important; 
+  color: white !important;    
+  padding: 30px 40px !important;
+  width: 90% !important;           
+  max-width: 800px !important;     
+  border-radius: 12px !important; 
+  box-sizing: border-box !important;
+  overflow: hidden !important;     
+}
+
+#bio-circ:empty { display: none !important; }
+
+/* Estilo simples para o botão interno do circuito */
+.circ-btn {
+  background-color: rgb(149, 78, 204);
+  color: black;
+  font-size: 14px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+
+
